@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/aem-boilerplate-xwalk/:/",
-    "/content/aem-boilerplate-xwalk/configuration:/.helix/config.json",
-    "/content/aem-boilerplate-xwalk/metadata:/metadata.json"
+    "/content/2026/40/sturdylion75343/:/",
+    "/content/2026/40/sturdylion75343/configuration:/.helix/config.json",
+    "/content/2026/40/sturdylion75343/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/aem-boilerplate-xwalk/"
+    "/content/2026/40/sturdylion75343/"
   ]
 }
