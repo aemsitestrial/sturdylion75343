@@ -2,7 +2,8 @@
   "mappings": [
     "/content/2026/40/sturdylion75343/:/",
     "/content/2026/40/sturdylion75343/configuration:/.helix/config.json",
-    "/content/2026/40/sturdylion75343/metadata:/metadata.json"
+    "/content/2026/40/sturdylion75343/metadata:/metadata.json",
+    "/content/2026/40/sturdylion75343/nav/d1sector:/d1sector.json"
   ],
   "includes": [
     "/content/2026/40/sturdylion75343/"
