@@ -222,13 +222,37 @@
       "component": "text",
       "name": "title",
       "label": "Title",
-      "valueType": "string"
+      "valueType": "string",
+       "options": [
+          {
+            "name": "Heading 1",
+            "value": "h1"
+          },
+          {
+            "name": "Heading 2",
+            "value": "h2"
+          },
+          {
+            "name": "Heading 3",
+            "value": "h3"
+          },
+          {
+            "name": "Heading 4",
+            "value": "h4"
+          }
+        ]
     },
     {
       "component": "text",
       "name": "description",
       "label": "Description",
-      "valueType": "string"
+      "valueType": "string",
+      "options":[
+        {
+          "name":"Paragraph",
+          "value": "p"
+        }
+      ]
     },
     {
       "component": "text",
