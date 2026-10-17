@@ -54,10 +54,18 @@ function readAuthoring(block) {
 
   // The block is authored as four simple rows:
   // title, description, phone number(s), email.
-  if (!fields.title && !fields.heading && positional[0]) fields.title = positional[0];
-  if (!fields.description && !fields.subtitle && positional[1]) fields.description = positional[1];
-  if (!fields.mobile && !fields.mobilenumber && !fields.phone && positional[2]) fields.mobile = positional[2];
-  if (!fields.email && !fields.emailaddress && positional[3]) fields.email = positional[3];
+  if (!fields.title && !fields.heading && positional[0]) {
+    fields.title = positional[0];
+  }
+  if (!fields.description && !fields.subtitle && positional[1]) {
+     fields.description = positional[1];
+  }
+  if (!fields.mobile && !fields.mobilenumber && !fields.phone && positional[2]) {
+    fields.mobile = positional[2];
+  }
+  if (!fields.email && !fields.emailaddress && positional[3]) {
+    fields.email = positional[3];
+  }
 
   return fields;
 }
@@ -110,7 +118,7 @@ const EMAIL_ICON = `
     <path d="m5 7 6 5a1.6 1.6 0 0 0 2 0l6-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>`;
 
-export default function decorate(block) {
+  export default function decorate(block) {
   block.classList.add('contact-us');
 
 const {
