@@ -73,8 +73,14 @@ function getContactData(block) {
   ].filter(Boolean);
 
   if (!phoneValues.length && fields.mobile) {
-    phoneValues.push(...fields.mobile.replace(/\/\s*/g, '/\n').split(/[\n,|]+/).map(cleanText).filter(Boolean));
-  }
+  const mobileValues = fields.mobile
+    .replace(/\/\s*/g, '/\n')
+    .split(/[\n,|]+/)
+    .map(cleanText)
+    .filter(Boolean);
+
+  phoneValues.push(...mobileValues);
+}
 
   if (!phoneValues.length && fields.mobilenumber) {
     phoneValues.push(...fields.mobilenumber.split(/[\n,|]+/).map(cleanText).filter(Boolean));
@@ -107,7 +113,13 @@ const EMAIL_ICON = `
 export default function decorate(block) {
   block.classList.add('contact-us');
 
-  const { title, description, phones, email } = getContactData(block);
+const {
+  title,
+  description,
+  phones,
+  email,
+} = getContactData(block);
+
   const phoneMarkup = phones.map((phone) => `<span class="contact-us__value-line">${escapeHtml(phone)}</span>`).join('');
 
   block.innerHTML = `
