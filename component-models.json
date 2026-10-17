@@ -214,5 +214,34 @@
         "valueType": "string"
       }
     ]
-  }
+  },
+{
+  "id": "contact-us",
+  "fields": [
+    {
+      "component": "text",
+      "name": "title",
+      "label": "Title",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "description",
+      "label": "Description",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "mobile",
+      "label": "Mobile",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "email",
+      "label": "Email",
+      "valueType": "string"
+    }
+  ]
+}
 ]
