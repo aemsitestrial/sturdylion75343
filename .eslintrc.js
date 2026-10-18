@@ -20,16 +20,16 @@ module.exports = {
     'no-param-reassign': [2, { props: false }], // allow modifying properties of param
   },
   {
-      files: ['component-models.json'],
-      rules: {
-        'xwalk/invalid-field-name': 'off', // Allow standard meta tag names like twitter:image:alt and og:image:alt
-        'xwalk/max-cells': [
-          'error',
-          {
-            section: 30, // section is a key-value block and over 4 is OK
-            listing: 5,
-          },
-        ],
-      },
+    files: ['component-models.json'],
+    rules: {
+      'xwalk/invalid-field-name': 'off', // Allow standard meta tag names like twitter:image:alt and og:image:alt
+      'xwalk/max-cells': [
+        'error',
+        {
+          section: 30, // section is a key-value block and over 4 is OK
+          listing: 5,
+        },
+      ],
     },
+  },
 };
