@@ -273,7 +273,7 @@
   "fields": [
     {
       "component": "reference",
-      "name": "image",
+      "name": "backgroundImage",
       "label": "Background Image",
       "valueType": "string"
     },
@@ -292,16 +292,53 @@
     },
     {
       "component": "text",
-      "name": "linkText",
+      "name": "buttonText",
       "label": "Button Text",
       "valueType": "string"
     },
     {
       "component": "aem-content",
-      "name": "link",
+      "name": "buttonLink",
       "label": "Button Redirect Link",
       "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "titleColor",
+      "label": "Title Text Color",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "descriptionColor",
+      "label": "Description Text Color",
+      "valueType": "string"
+    },
+    {
+      "component": "select",
+      "name": "descriptionWidth",
+      "label": "Description Width",
+      "valueType": "string",
+      "options": [
+        {
+          "name": "400px",
+          "value": "400px"
+        },
+        {
+          "name": "500px",
+          "value": "500px"
+        },
+        {
+          "name": "628px",
+          "value": "628px"
+        },
+        {
+          "name": "100%",
+          "value": "100%"
+        }
+      ]
     }
   ]
 }
+
 ]
