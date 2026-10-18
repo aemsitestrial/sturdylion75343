@@ -1,4 +1,3 @@
-
 const normalizeLabel = (value = '') => value
   .toLowerCase()
   .replace(/[\s_-]+/g, '')
@@ -101,7 +100,10 @@ function readAuthoring(block) {
   });
 
   positional.forEach((item) => {
-    const { text, image, link, cells } = item;
+    const {
+        label,
+        cells,
+    } = data;
     const hasHeading = cells.some((cell) => (
       cell.querySelector('h1, h2, h3, h4, h5, h6')
     ));
@@ -154,7 +156,13 @@ function makeElement(tag, className, text) {
 
 export default function decorate(block) {
   const fields = readAuthoring(block);
-  const { image, title, description, buttonText, buttonLink } = fields;
+  const { 
+    image, 
+    title, 
+    description, 
+    buttonText, 
+    buttonLink 
+} = fields;
 
   block.classList.add('content-banner');
 
