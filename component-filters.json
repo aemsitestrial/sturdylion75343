@@ -39,5 +39,11 @@
       "button",
       "title"
     ]
+  },
+  {
+    "id":"banners",
+    "components":[
+      "content-banner"
+    ]
   }
 ]

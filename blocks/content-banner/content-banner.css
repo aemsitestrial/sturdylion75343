@@ -1,0 +1,188 @@
+/* ContentBanner — Figma desktop frame: 1440 × 511 */
+.content-banner-container,
+.content-banner-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.content-banner-wrapper {
+  overflow: hidden;
+}
+
+.content-banner {
+  --content-banner-red: #ed1c25;
+  --content-banner-text: #1c1c1c;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 511px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #1c1c1c;
+  color: var(--content-banner-text);
+  font-family: 'Geist', var(--body-font-family), Arial, sans-serif;
+}
+
+.content-banner *,
+.content-banner *::before,
+.content-banner *::after {
+  box-sizing: border-box;
+}
+
+.content-banner__inner {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 511px;
+  padding: 80px;
+}
+
+.content-banner__background {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+}
+
+.content-banner__background picture,
+.content-banner__background img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.content-banner__background img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.content-banner__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex: 0 1 628px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 628px;
+  max-width: 100%;
+  min-width: 0;
+  padding-top: 0;
+}
+
+.content-banner__title {
+  max-width: 780px;
+  margin: 0;
+  color: var(--content-banner-red);
+  font-family: 'Geist', var(--body-font-family), Arial, sans-serif;
+  font-size: 52px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 1.15;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+.content-banner__description {
+  width: 100%;
+  margin: 0;
+  color: var(--content-banner-text);
+  font-family: 'Geist', var(--body-font-family), Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.content-banner__button:any-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  width: 242px;
+  min-height: 60px;
+  margin-top: 16px;
+  padding: 16px 24px;
+  border: 0;
+  border-radius: 16px;
+  color: #fff;
+  background: var(--content-banner-red);
+  font-family: 'Geist', var(--body-font-family), Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 160ms ease;
+}
+
+.content-banner__button:hover,
+.content-banner__button:focus-visible {
+  color: #fff;
+  background: #c81019;
+  text-decoration: none;
+}
+
+.content-banner__button:focus-visible {
+  outline: 2px solid #1c1c1c;
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .content-banner__inner {
+    min-height: 460px;
+    padding: 64px 40px;
+  }
+
+  .content-banner__title {
+    font-size: clamp(38px, 5.5vw, 48px);
+  }
+
+  .content-banner__description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-banner,
+  .content-banner__inner {
+    min-height: 440px;
+  }
+
+  .content-banner__inner {
+    padding: 48px 24px;
+  }
+
+  .content-banner__content {
+    gap: 14px;
+  }
+
+  .content-banner__title {
+    font-size: clamp(32px, 9vw, 42px);
+  }
+
+  .content-banner__description {
+    font-size: 15px;
+  }
+
+  .content-banner__button:any-link {
+    width: auto;
+    min-width: 180px;
+    min-height: 52px;
+    margin-top: 10px;
+    padding: 14px 24px;
+    border-radius: 14px;
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content-banner__button:any-link {
+    transition: none;
+  }
+}
