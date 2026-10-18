@@ -29,6 +29,7 @@ module.exports = {
           {
             section: 30, // section is a key-value block and over 4 is OK
             listing: 5,
+            banners: 10
           },
         ],
       },
