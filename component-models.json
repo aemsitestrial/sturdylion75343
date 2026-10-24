@@ -265,6 +265,17 @@
       "name": "email",
       "label": "Email",
       "valueType": "string"
+    },
+    {
+      "id": "model-lab",
+      "fields": [
+        {
+          "component": "text",
+          "name": "title",
+          "label": "Title",
+          "valueType": "string"
+        }
+      ]
     }
   ]
 }
