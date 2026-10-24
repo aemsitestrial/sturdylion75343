@@ -1,0 +1,25 @@
+{
+    "definitions":[
+        {
+            "title":"Model Lab",
+            "id": "model-lab"
+        }
+    ],
+    "models":[
+        {
+            "id":"model-lab",
+            "fields":[
+                {
+                    "componenet":"text",
+                    "name":"title",
+                    "Label":"Title",
+                    "valueType":"String"
+                }
+            ]
+        }
+
+    ],
+    "filters":[
+
+    ]
+}
