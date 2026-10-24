@@ -8,7 +8,7 @@ export default function decorate(block) {
   block.innerHTML = `
     <h2>${title || 'Contact Us'}</h2>
     <p>${description || ''}</p>
-    <p>Phone: ${mobile || ''}</p>
+    <p>Mobile: ${mobile || ''}</p>
     <p>Email: ${email || ''}</p>
   `;
 }
